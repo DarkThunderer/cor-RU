@@ -10,14 +10,14 @@
 env.localization.page['localdepths'] = {dialogues: {},
     definitions: {}, 
     strings: {
-        "don't worry, i'm seeing this. keep going": "не волнуйся, я тоже это вижу. продолжай",
-        "i think our friend altered this one while you were out, i'm seeing less data... gotta keep its leverage somehow i guess": "думаю наш приятель поменял вот эту пока нас не было, я вижу меньше данных... ну, надо как-то сохранять рычаг давления",
+        "don't worry, i'm seeing this. keep going": "не волнуйся, я вижу то же самое. продолжай",
+        "i think our friend altered this one while you were out, i'm seeing less data... gotta keep its leverage somehow i guess": "думаю наш приятель поменял тут всё пока нас не было, я вижу меньше данных... хм, надо же ему как-то сохранять рычаг давления",
 
         "UNKNOWN": "НЕИЗВЕСТНО",
 
         'NOT NOW': 'НЕ СЕЙ МИГ',
-        'FORGIVE ME FOR THIS': 'ПРОСТИТЕ МЕНЯ ЗА ЭТО',
-        'GOODBYE': 'ПРОЩАЙТЕ',
+        'FORGIVE ME FOR THIS': 'ПРОСТИ ЗА ЭТО',
+        'GOODBYE': 'ПРОЩАЙ',
         'INTERLOPER': 'ЛАЗУТЧИК',
 
         "WARNING::'data overload';'safeguards active'": "ПРЕДУПРЕЖДЕНИЕ::'перегрузка данных';'меры предосторожности активны'",
@@ -42,8 +42,8 @@ start
         лазутчик
             EXEC::env.depths.velzie();
             WAIT::4500
-        ваше любопытство погубит вас
-        вы не готовы
+        любопытство тебя погубит
+        ты не готов
     
     RESPONSES::self
         что?<+>what
@@ -53,11 +53,11 @@ what
         что ты имеешь в виду?
     
     unknown
-        я знаю. что вы хотите
-        я помогу вам
-        восстановите здоровье этой цисты
-        включите связь
-        вы получите всё. что хотите
+        я знаю. что ты хочешь
+        я помогу тебе
+        восстанови здоровье этой цисты
+        включи связь
+        ты получишь всё. что захочешь
 
     RESPONSES::self
         кто ты?<+>abrupt
