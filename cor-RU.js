@@ -529,27 +529,27 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
     // loading and updating stuff as we go
 
     list: {
-        everything: "https://cor-ru.github.io/cor-RU/localization/everystuff.js",
+        everything: "https://darkthunderer.github.io/cor-RU/localization/everystuff.js",
         page: {
-            fbx:                "https://cor-ru.github.io/cor-RU/localization/basement.js",
+            fbx:                "https://darkthunderer.github.io/cor-RU/localization/basement.js",
 
-            hello:              "https://cor-ru.github.io/cor-RU/localization/auth-layer.js",
-            hub:                "https://cor-ru.github.io/cor-RU/localization/hub.js",
+            hello:              "https://darkthunderer.github.io/cor-RU/localization/auth-layer.js",
+            hub:                "https://darkthunderer.github.io/cor-RU/localization/hub.js",
 
-            localcity:          "https://cor-ru.github.io/cor-RU/localization/their-city.js",
-            citystreet:         "https://cor-ru.github.io/cor-RU/localization/city-surface.js",
+            localcity:          "https://darkthunderer.github.io/cor-RU/localization/their-city.js",
+            citystreet:         "https://darkthunderer.github.io/cor-RU/localization/city-surface.js",
 
-            localorbit:         "https://cor-ru.github.io/cor-RU/localization/the-void.js",
-            dullvessel:         "https://cor-ru.github.io/cor-RU/localization/our-dull-vessel.js",
+            localorbit:         "https://darkthunderer.github.io/cor-RU/localization/the-void.js",
+            dullvessel:         "https://darkthunderer.github.io/cor-RU/localization/our-dull-vessel.js",
 
-            localocean:         "https://cor-ru.github.io/cor-RU/localization/their-waters.js",
-            localship:          "https://cor-ru.github.io/cor-RU/localization/their-vessel.js",
-            interview1:         "https://cor-ru.github.io/cor-RU/localization/the-funny-little-room.js",
+            localocean:         "https://darkthunderer.github.io/cor-RU/localization/their-waters.js",
+            localship:          "https://darkthunderer.github.io/cor-RU/localization/their-vessel.js",
+            interview1:         "https://darkthunderer.github.io/cor-RU/localization/the-funny-little-room.js",
 
-            localdepths:        "https://cor-ru.github.io/cor-RU/localization/the-depths.js",
+            localdepths:        "https://darkthunderer.github.io/cor-RU/localization/the-depths.js",
         },
-        entityMenu: "https://cor-ru.github.io/cor-RU/localization/entity-menu.js",
-        load:       "https://cor-ru.github.io/cor-RU/load.js",
+        entityMenu: "https://darkthunderer.github.io/cor-RU/localization/entity-menu.js",
+        load:       "https://darkthunderer.github.io/cor-RU/load.js",
     },
 
     updateResources: function (fresh = false) {
