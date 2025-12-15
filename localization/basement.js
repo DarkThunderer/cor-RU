@@ -21,7 +21,7 @@ env.localization.page['fbx'] = {dialogues: {},
         "all sorts of sizes too": "причём самых разных размеров",
         "but most were too heavy to retrieve... so we just got this small one": "большинство - слишком тяжелые, чтобы их можно было поднять. Эта - одна из тех, что поменьше.",
         "the dendritic cyst has a rigid outer shell. it's unlikely that there's any way to connect to it": "у дендритной цисты жёсткая внешняя оболочка. не похоже, что к ней можно подключиться",
-        "the dendritic cyst is surprisingly heavy. turning it in your hands produces a cascade of metallic clinking noises from within. when you set it back down, its tendrils find a new orientation to support itself on the table": "дендритная циста на удивление тяжела. при поворотах слышно как внутри что-то звенит. едва ты опускаешь цисту на стол, ее отростки сдвигаются, чтобы равномерно перераспределить вес по поверхности",
+        "the dendritic cyst is surprisingly heavy. turning it in your hands produces a cascade of metallic clinking noises from within. when you set it back down, its tendrils find a new orientation to support itself on the table": "дендритная циста на удивление тяжела. при поворотах слышно как внутри что-то звенит. едва ты опускаешь цисту на стол, ее отростки сдвигаются, чтобы равномерно перераспределить вес цисты по поверхности",
 
         "FRACTALLINE CYST": "ФРАКТАЛЬНАЯ ЦИСТА", 
         "nobody knows what this one is.. pretty sure it's dead though": "из наших никто не знает что это такое. Думаю оно уже сдохло.",
@@ -33,7 +33,7 @@ env.localization.page['fbx'] = {dialogues: {},
         "no clue what it is aside from some similar internal structure to network cysts we've found before": "понятия не имею для чего она нужна - ясно лишь что внутренняя структура походит на таковую у сетевых цист",
         "the cyst has a solid outer shell. a few circular points near the top are less firm than the rest. in your experience, these are usually connection points. you can definitely scan this point more thoroughly.": "оболочка цисты довольно твердая. в нескольких местах сверху цисты оболочка чуть тоньше. как подсказывает твой опыт, через такие точки легче всего установить соединение. стоит чуть внимательнее их изучить.",
         "depth scan": "подробное сканирование",
-        "ANALYSIS::'valid nerve point';'connection enabled'": "АНАЛИЗ::'действительная нервная точка';'доступно подключение'",
+        "ANALYSIS::'valid nerve point';'connection enabled'": "АНАЛИЗ::'действующая нервная точка';'доступно подключение'",
         "::CORRUCYSTIC ENTITY": "`::КОРРУЦИСТОЗНАЯ СУЩНОСТЬ",
         "::NO FUNCTION SIGNATURE": "::БЕЗ ПОДПИСИ ФУНКЦИИ",
         "::CONNECTIVE MEMBRANE EXPOSED": "::ОБНАЖЁННАЯ СОЕДИНИТЕЛЬНАЯ МЕМБРАНА",
@@ -129,10 +129,10 @@ where
     moth
         с какого-то крушения на дне океана недалеко от новой зеландии
         и под "недалеко" я имею в виду, типа, километров так за тыщу от юго-восточного берега
-        просто всё это нашли в такой жопе мира что...
-        ну, мне показалось ничего ближе новой зеландии ты не узнаешь
-        они считают что оно отплыло достаточно далеко от того места, где изначально упало
-        по их оценкам, провалялось там внизу лет 20-30 если не больше
+        просто нашли эти цисты в такой жопе мира что..
+        ну, новая зеландия по сути является ближайшей к обломкам точкой, название которой знает кто-то кроме картографов.
+        наши считают что обломки отплыли достаточно далеко от места, куда изначально упали
+        по их оценкам, провалялось на дне всё это лет 20-30, если не больше
 
     RESPOBJ::mthhubresp
 `)
