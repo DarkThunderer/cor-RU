@@ -27,7 +27,7 @@ start
         невееерно неверно неверно не попааал!!! ахахахаха 
         ахахаххахах
         покааа!!!!
-            EXEC::setTimeout(()=>{endDialogue();moveTo(\`/local/uncosm/${env.uncode.input.value}\`)}, 1000)
+            EXEC::setTimeout(()=>{endDialogue();moveTo(\`/local/uncosm/123\`)}, 1000)
             WAIT::2000
             
     RESPONSES::self

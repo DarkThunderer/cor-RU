@@ -8,7 +8,7 @@
 */
 
 
-env.localization.page['localoceanship'] = {dialogues: {},
+env.localization.page['localship'] = {dialogues: {},
     definitions: {
     }, 
     strings: {
@@ -19,7 +19,6 @@ env.localization.page['localoceanship'] = {dialogues: {},
     }, 
     entityDescriptions: {
         "the funny little room": cor_ru.entity_menu["the funny little room"].desc,
-        "clemens romanus": cor_ru.entity_menu["clemens romanus"].desc,
     }
 }
 
