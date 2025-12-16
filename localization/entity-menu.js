@@ -63,6 +63,14 @@ cor_ru.entity_menu = {
         name: `комната высоко наверху`,
         desc: `::ЭМПИРИЧЕСКАЯ МЫСЛЕФОРМА<br><span style="color: var(--obesk-color)" definition="АНАЛИЗ::'противоречивые источники памяти'">::ОБНАРУЖЕНА БЕССВЯЗНОСТЬ</span>`
     },
+    "stre wal k": {
+        name: `прох ож ий`,
+        desc: `::INCOMPLETE THOUGHTFORM<br>::SIGNATURE ILLEGIBLE<br><span style="color: var(--obesk-color)" definition="АНАЛИЗ::'сильно деградировавший визуальный профиль';'чрезвычайно низкая связность'">::ВЫСОКАЯ БЕССВЯЗНОСТЬ</span><br>::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>'больно'</span>`
+    },
+    "slim streetwalker": {
+        name: `тощий прохожий`,
+        desc: `::ОТЗЫВЧИВАЯ МЫСЛЕФОРМА<br>::ЯВНОЕ НАЗНАЧЕНИЕ::'вспоминание'<br><span style="color: var(--obesk-color)" definition="АНАЛИЗ::'сильно деградировавший визуальный профиль','низкая связность'">::ВЫСОКАЯ БЕССВЯЗНОСТЬ</span>`
+    },
 
     // === the void
     "our dull vessel": {
@@ -108,9 +116,24 @@ cor_ru.entity_menu = {
 
     // === their vessel
     "the funny little room": {
-        name: `забавная маленькая комната`,
+        name: `забавная комнатка`,
         desc: `::ЭМПИРИЧЕСКАЯ МЫСЛЕФОРМА`
     },
+
+    // === uncosm
+    "no no no no": {
+        name: `нет нет нет нет`,
+        desc: `::ВЫСКАЗЫВАЮЩАЯ МЫСЛЕФОРМА<br>::СОДЕРЖАНИЕ::'<br><span>ХВАТИТ ХВАТИТ ХВАТИТ</span><br><span>я знаю ЗНАЮ ЗНАЮ ЗНАЮ</span><br><span>ХВАТИТ ХВАТИТ ХВАТИТ ЗНАЮ ХВАТИТ</span><br><span>ПЕРЕСТАНЬ ПЕРЕСТАНЬ</span>'`
+    },
+    "memory hole": {
+        name: `яма памяти`,
+        desc: `::СОЕДИНИТЕЛЬНАЯ МЫСЛЕФОРМА<br>::ПУНКТ НАЗНАЧЕНИЯ::'недействителен';..ОШИБКА::ИÓỳ=ОШИБКА::;;::-¼¯-ÿН£«â<br>ОШИБКА::ªµõ„'(‚ôÇд7÷ Çe`
+    },
+
+    "memoryhole": {
+        name: `ямапамяти`,
+        desc: `::НЕОБРАБАТЫВАЕМАЯ МЫСЛЕФОРМА<br>::<span definition="ПРИМЕЧАНИЕ::'нестандартный формат'">НЕОБЫЧНАЯ ПОДПИСЬ</span><br>::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>'помощи не жди хехехе'</span>`
+    }
 }
 
 cor_ru.getEntityMenuNames = function() { // to adapt the lil definition-like names in entmenu whilist avoiding strings bleeding in 

@@ -88,12 +88,18 @@ env.localization.page['citystreet'] = {dialogues: {},
         /*moth*/ "uhh... ok": "эээ... ладно",
         /*moth*/ "you should definitely talk to funfriend about that": "тебе точно надо поговорить об этом с развледругом",
 
+        /*slim streetwalker*/ "hhel o": "ппри вет",
+        /*slim streetwalker*/ "akizet": "акизет",
+        /*slim streetwalker*/ "nice  ,  weather": "хорошая  ,  погодка",
+        /*slim streetwalker*/ "safe ": "безопасно",
 
         "cashier": cor_ru.entity_menu["cashier"].name,
         "envoy": cor_ru.entity_menu["envoy"].name,
         "menu": cor_ru.entity_menu["menu"].name,
         "cloaked streetwalker": cor_ru.entity_menu["cloaked streetwalker"].name,
         "the room high up": cor_ru.entity_menu["the room high up"].name,
+        "slim streetwalker": cor_ru.entity_menu["slim streetwalker"].name,
+        "stre wal k": cor_ru.entity_menu["stre wal k"].name,
         'the roothe room hithe room gh u the roomp': 'ко ком ата выкомн ат сокомнаве рх о вер ху',
     },
     entityDescriptions: {
@@ -106,6 +112,8 @@ env.localization.page['citystreet'] = {dialogues: {},
     ::НЕВИЗУАЛИЗИРУЕМА
     <span style="color: var(--obesk-color)" definition="АНАЛИЗ::'пункт назначения превышает порог бессвязности';'рекомендуется починка'">::ЗАПРЕДЕЛЬНАЯ БЕССВЯЗНОСТЬ</span>
     ::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>'молчи молчи молчи молчи молчи молчи молчи'</span>`,
+        "slim streetwalker": cor_ru.entity_menu["slim streetwalker"].desc,
+        "stre wal k": cor_ru.entity_menu["stre wal k"].desc,
     }  
 }
 
@@ -533,6 +541,77 @@ start
             EXEC::body.classList.remove('zoom')
 `)
 
+env.localization.page['citystreet'].dialogues["walker1"] = generateDialogueObject(`
+start
+    sourceless
+        Я ВСТРЕЧАЮСЬ ВЗГЛЯДОМ СО СВЕТЛЫМ БЛИЗНЕЦОМ, НАПРАВЛЯЮЩИМ НА МЕНЯ СВОЙ КОММУНИКАТОР
+        ОН ЯВНО НЕ ЗНАЕТ ЧТО СТОИТ ДЕЛАТЬ В ТАКОЙ СИТУАЦИИ. Я СМЕЮСЬ И МАШУ ПЕРЕД ЕГО ГЛАЗАМИ РЕЦЕПТОРОМ
+    
+    akizet
+        привет!
+
+    stre wal k
+        больно
+            EXEC::page.bgm.rate(0.8)
+        больно
+            EXEC::page.bgm.rate(0.5);content.classList.add('incoherent')
+
+    akizet
+        нет, я здесь лишь в первый раз
+
+    stre wal k
+        больно
+            EXEC::page.bgm.rate(0.3);body.classList.add('zoom')
+        больно
+            EXEC::page.bgm.rate(0.1)
+        здесь кто-нибудь есть
+    
+    akizet
+        правда? думаю стоит попробовать!
+        меня зовут акизетеше, друг мой
+        я рада с вами познакомиться
+    
+    stre wal k
+        я ничего не могу почувствовать
+        я ничего не могу почувствовать
+        это сделал ты
+
+    moth
+        постой, он что, в сознании?
+        можешь с ним поговорить?
+    
+    RESPONSES::self
+        помочь?<+>help
+
+help
+    self
+        я могу тебе чем-то помочь?
+    
+    stre wal k
+        здесь кто-нибудь есть
+        больно
+        больно
+    
+    moth
+        блин, походу всё же нет
+        сигналы точь-в-точь как раньше..
+        похоже от него мы ничего не получим
+    
+    RESPONSES::self
+        прости<+>END
+            EXEC::page.bgm.rate(0.9);content.classList.remove('incoherent');body.classList.remove('zoom')
+`)
+
+env.localization.page['citystreet'].dialogues["walker1followup"] = generateDialogueObject(`
+start
+    stre wal k
+        больно
+            EXEC::page.bgm.rate(0.5);content.classList.add('incoherent')
+    
+    RESPONSES::self
+        я не могу тебе помочь<+>END
+            EXEC::page.bgm.rate(0.9);content.classList.remove('incoherent')
+`)
 
 // == IN CAFE == //
 
