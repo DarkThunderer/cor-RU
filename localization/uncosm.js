@@ -2,7 +2,7 @@
     cor-RU - a russian localization mod for corru.observer;
     see https://github.com/cor-RU/cor-RU for more info
 
-    > localization/the-depths.js
+    > localization/uncosm.js
     localization for /local/uncosm
 */
 
@@ -22,3 +22,5 @@ env.localization.page['localuncosm'] = {dialogues: {},
 
 
 // === DIALOGUES === //
+
+getLocalizationForPage(true) // --- ensuring that Nothing Gets Fucked Up

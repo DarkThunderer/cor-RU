@@ -2,7 +2,7 @@
     cor-RU - a russian localization mod for corru.observer;
     see https://github.com/cor-RU/cor-RU for more info
 
-    > localization/the-depths.js
+    > localization/memory-hole.js
     localization for /local/uncosm/where
 */
 
@@ -27,9 +27,11 @@ start
         невееерно неверно неверно не попааал!!! ахахахаха 
         ахахаххахах
         покааа!!!!
-            EXEC::setTimeout(()=>{endDialogue();moveTo(\`/local/uncosm/123\`)}, 1000)
+            EXEC::setTimeout(()=>{endDialogue();moveTo(\`/local/uncosm\`)}, 1000)
             WAIT::2000
             
     RESPONSES::self
         что вообще происходит?<+>END
 `)
+
+getLocalizationForPage(true) // --- ensuring that Nothing Gets Fucked Up
