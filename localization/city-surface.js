@@ -27,6 +27,8 @@ env.localization.page['citystreet'] = {dialogues: {},
 
         "read": "прочитать",
 
+        "talk": "поговорить",
+
 
         /*sourceless*/ "THE ATTENDANT IS PARALYZED BY MY APPEARANCE. I SENSE THE GLOW OF RECORDING COMMUNICATORS IN MY PERIPHERAL VISION": "СОТРУДНИЦА В СТУПОРЕ ОТ МОЕГО ВНЕШНЕГО ВИДА. ПЕРИФЕРИЙНЫМ ЗРЕНИЕМ Я ЗАМЕЧАЮ СВЕЧЕНИЕ ЗАПИСЫВАЮЩИХ КОММУНИКАТОРОВ",
         /*cashier*/ "Uhh...": "Эээ...",
@@ -581,7 +583,7 @@ start
         можешь с ним поговорить?
     
     RESPONSES::self
-        помочь?<+>help
+        помочь<+>help
 
 help
     self

@@ -65,7 +65,7 @@ cor_ru.entity_menu = {
     },
     "stre wal k": {
         name: `прох ож ий`,
-        desc: `::INCOMPLETE THOUGHTFORM<br>::SIGNATURE ILLEGIBLE<br><span style="color: var(--obesk-color)" definition="АНАЛИЗ::'сильно деградировавший визуальный профиль';'чрезвычайно низкая связность'">::ВЫСОКАЯ БЕССВЯЗНОСТЬ</span><br>::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>'больно'</span>`
+        desc: `::НЕПОЛНОЦЕННАЯ МЫСЛЕФОРМА<br>::ПОДПИСЬ НЕРАЗБОРЧИВА<br><span style="color: var(--obesk-color)" definition="АНАЛИЗ::'сильно деградировавший визуальный профиль';'чрезвычайно низкая связность'">::ВЫСОКАЯ БЕССВЯЗНОСТЬ</span><br>::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>'больно'</span>`
     },
     "slim streetwalker": {
         name: `тощий прохожий`,

@@ -547,6 +547,8 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
             interview1:         "https://darkthunderer.github.io/cor-RU/localization/the-funny-little-room.js",
 
             localdepths:        "https://darkthunderer.github.io/cor-RU/localization/the-depths.js",
+            localuncosm:        "https://darkthunderer.github.io/cor-RU/localization/memory-hole.js",
+            localuncosmwhere:   "https://darkthunderer.github.io/cor-RU/localization/uncosm.js"
         },
         entityMenu: "https://darkthunderer.github.io/cor-RU/localization/entity-menu.js",
         load:       "https://darkthunderer.github.io/cor-RU/load.js",
