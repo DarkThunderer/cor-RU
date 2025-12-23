@@ -67,9 +67,9 @@ if (window.location.pathname == '/credits') {
     document.querySelector(".fundfriends").insertAdjacentHTML("afterbegin", fund)
     throw new Error("hi dont mind me cor-RU is not supposed to load properly in credits")
 }
-else if ((page.path == '/' && !check('TEMP!!sat') && check('ep0_epilogue') && !check('ep1_showmaterials')) || env.ep1 == true) {
-    chatter({actor: 'actual_site_error', text: "hi! cor-RU is availiable only for ep0<br>приветик! cor-RU доступен только для ep0", readout: true})
-    throw new Error("hi! сor-RU is availiable only for ep0")
+else if ((page.path == '/' && !check('TEMP!!sat') && check('ep1_epilogue') && !check('ep2_showmaterials')) || env.ep2 == true) {
+    chatter({actor: 'actual_site_error', text: "hi! cor-RU is availiable only for ep0-1<br>приветик! cor-RU доступен только для ep0-1", readout: true})
+    throw new Error("hi! сor-RU is availiable only for ep0-1")
 }
 
 env.localization = {
@@ -529,29 +529,30 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
     // loading and updating stuff as we go
 
     list: {
-        everything: "https://darkthunderer.github.io/cor-RU/localization/everystuff.js",
+        everything: "http://localhost:8000/localization/everystuff.js",
         page: {
-            fbx:                "https://darkthunderer.github.io/cor-RU/localization/basement.js",
+            fbx:                "http://localhost:8000/localization/basement.js",
 
-            hello:              "https://darkthunderer.github.io/cor-RU/localization/auth-layer.js",
-            hub:                "https://darkthunderer.github.io/cor-RU/localization/hub.js",
+            hello:              "http://localhost:8000/localization/auth-layer.js",
+            hub:                "http://localhost:8000/localization/hub.js",
 
-            localcity:          "https://darkthunderer.github.io/cor-RU/localization/their-city.js",
-            citystreet:         "https://darkthunderer.github.io/cor-RU/localization/city-surface.js",
+            localcity:          "http://localhost:8000/localization/their-city.js",
+            citystreet:         "http://localhost:8000/localization/city-surface.js",
 
-            localorbit:         "https://darkthunderer.github.io/cor-RU/localization/the-void.js",
-            dullvessel:         "https://darkthunderer.github.io/cor-RU/localization/our-dull-vessel.js",
+            localorbit:         "http://localhost:8000/localization/the-void.js",
+            dullvessel:         "http://localhost:8000/localization/our-dull-vessel.js",
 
-            localocean:         "https://darkthunderer.github.io/cor-RU/localization/their-waters.js",
-            localship:          "https://darkthunderer.github.io/cor-RU/localization/their-vessel.js",
-            interview1:         "https://darkthunderer.github.io/cor-RU/localization/the-funny-little-room.js",
+            localocean:         "http://localhost:8000/localization/their-waters.js",
+            localship:          "http://localhost:8000/localization/their-vessel.js",
+            interview1:         "http://localhost:8000/localization/the-funny-little-room.js",
 
-            localdepths:        "https://darkthunderer.github.io/cor-RU/localization/the-depths.js",
-            localuncosm:        "https://darkthunderer.github.io/cor-RU/localization/memory-hole.js",
-            localuncosmwhere:   "https://darkthunderer.github.io/cor-RU/localization/uncosm.js"
+            localdepths:        "http://localhost:8000/localization/the-depths.js",
+            localuncosm:        "http://localhost:8000/localization/memory-hole.js",
+            localuncosmwhere:   "http://localhost:8000/localization/uncosm.js",
+            recosm:             "http://localhost:8000/localization/recosm.js"
         },
-        entityMenu: "https://darkthunderer.github.io/cor-RU/localization/entity-menu.js",
-        load:       "https://darkthunderer.github.io/cor-RU/load.js",
+        entityMenu: "http://localhost:8000/localization/entity-menu.js",
+        load:       "http://localhost:8000/load.js",
     },
 
     updateResources: function (fresh = false) {

@@ -14,6 +14,7 @@ env.localization.page['localdepths'] = {dialogues: {},
         "i think our friend altered this one while you were out, i'm seeing less data... gotta keep its leverage somehow i guess": "думаю наш приятель поменял тут всё пока нас не было, я вижу меньше данных... хм, надо же ему как-то сохранять рычаг давления",
 
         "UNKNOWN": "НЕИЗВЕСТНО",
+        "unknown": "НЕИЗВЕСТНО",
 
         'NOT NOW': 'НЕ СЕЙ МИГ',
         'FORGIVE ME FOR THIS': 'ПРОСТИ ЗА ЭТО',

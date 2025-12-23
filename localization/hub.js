@@ -256,6 +256,17 @@ RESPOBJ::
             SHOWONCE::
             SHOWIF::[['visited_localorbit'], ["ENV!!ep2", false]]
 
+        больше не голоден?<+>ep1fed
+            SHOWONCE::
+            SHOWIF::[['ep1_fed'], ["ENV!!ep2", false]]
+
+        как починка?<+>repairs
+            SHOWIF::'hub__funfriend-ep1fed'
+            HIDEREAD::
+
+        я могу чем-то помочь?<+>ah1
+            SHOWIF::[['hub__funfriend-ep1fed', true], ["recosm_state", false]]
+
         мне пора<+>END
 `),
 env.localization.page["hub"].dialogues["funfriend"] = generateDialogueObject(`
@@ -362,7 +373,7 @@ essentialmetalq
         Я БЫЛО ДУМАЛ ЧТО ТЫ - КАКОЙ-ТО ПОВРЕЖДЁННЫЙ ГОЛЕМ
         НО ЗНАТЬ ТАК МАЛО...
         АХ ЧТО ЖЕ. МНЕ НА САМОМ ДЕЛЕ ВСЁ РАВНО
-        В СЕЙ θмиг Я ОЧЕНЬ ЗАНЯТ УДЕРЖИВАНИЕМ РАЗЛИЧНЫХ КОМПОНЕНТНОВ ОТ ПОТЕРИ РАССУДКА
+        В СЕЙ θмиг Я ОЧЕНЬ ЗАНЯТ УДЕРЖИВАНИЕМ РАЗЛИЧНЫХ КОМПОНЕНТОВ ОТ ПОТЕРИ РАССУДКА
         И НЕ ХОЧУ ТРАТИТЬ ВРЕМЯ НА ОБЪЯСНЕНИЕ ЭЛЕМЕНТАРНЫХ ПРИНЦИПОВ РАБОТЫ КОРРУЦИСТ
         В ЭТОЙ ЦИСТЕ ЕСТЬ ИНФОРМАЦИЯ КОТОРАЯ ОТВЕТИТ НА ВСЕ ТВОИ ВОПРОСЫ
         ПРОСТО ОСМОТРИСЬ
@@ -445,7 +456,7 @@ ep0_container
 
 moregates
     self
-        почему здесь стало больше врат?
+        ПОЧЕМУ ЗДЕСЬ СТАЛО БОЛЬШЕ ВРАТ?
     
     funfriend
         РАД ЧТО ТЫ ЗАМЕТИЛ!
@@ -456,6 +467,178 @@ moregates
         СПАСИБО ЗА ПОМОЩЬ!
     
     RESPOBJ::hubBuddyResponses
+
+ep1fed
+    self
+        БОЛЬШЕ НЕ ГОЛОДЕН?
+
+    funfriend
+        ДА!
+        ЛАЗУТЧИК, ТЫ ПРЕВЗОШЁЛ ВСЕ МОИ ОЖИДАНИЯ
+        ВОССТАНОВЛЕНИЕ ЗАЙМЁТ МНОГО ВРЕМЕНИ
+        НО ТЕПЕРЬ ОНО ОСУЩЕСТВИМО
+        ВОПРОС В ТОМ, ЧТО <em>ПЕРВЫМ</em> СТОИТ ВОССТАНОВИТЬ
+        ТОЧНО! ТЫ ЖЕ ПРИШЁЛ ЗА ИНФОРМАЦИЕЙ, ВЕРНО?
+        Я ПОЧИНЮ ПОСОЛЬСТВО! ТАМ О МНОГОМ МОЖНО УЗНАТЬ
+        А ПОКА ТЫ БУДЕШЬ ЕГО ИССЛЕДОВАТЬ.. 
+        Я НАЧНУ ЧИНИТЬ КЛЮЧЕВЫЕ ЭЛЕМЕНТЫ ЦИСТЫ
+        ИХ ПОЧИНКА ЗАЙМЕТ БОЛЬШЕ ВСЕГО ВРЕМЕНИ
+        УГОДЕН ЛИ ТЕБЕ ТАКОЙ ПЛАН?
+
+    moth
+        хмм, если так подумать..
+        у нас так и не возникло возможности хорошенько осмотреть внутренности посольства, пока оно еще стояло
+        сразу после обвала они конечно построили на обломках посольство поменьше, которое и сейчас стоит..
+        но вот оригинал нормально никто не смог исследовать, даже в виде обломков. было бы здорово посмотреть как там всё работало
+
+    RESPONSES::self
+        план хороший<+>ep1start
+
+ep1start
+    self
+        ПЛАН ХОРОШИЙ, ВЫПОЛНЯЙ
+
+    funfriend
+        ЧТО ЖЕ
+        Я ДОЛЖЕН ПРИЗНАТЬСЯ: 
+        Я НАЧАЛ ПРОЦЕСС ПОЧИНКИ ДО ТОГО КАК СПРОСИЛ
+        И УЖЕ НАШЕЛ МНОГО ПРОБЛЕМ! АХАХА
+        ПРОСТРАНСТВЕННУЮ ПАМЯТЬ ПОСОЛЬСТВА УДАЛОСЬ ВОССТАНОВИТЬ, И ТОЧНОСТЬ СОБЫТИЙ ПРИЕМЛЕМА..
+        ОДНАКО ВИЗУАЛЬНЫЕ ОБРАЗЫ КУУ РАБОТАВШИХ В ПОСОЛЬСТВЕ ВОССТАНОВЛЕНИЮ НЕ ПОДЛЕЖАТ
+        К СЧАСТЬЮ, В РЕЗЕРВНЫХ КОПИЯХ БАЗ ЗНАНИЙ Я СУМЕЛ НАЙТИ НЕСКОЛЬКО ВЕРСИЙ СЕТЕВЫХ СИГНАТУР РАБОТНИКОВ
+        ПОТОМУ ЗАМЕНИЛ ИХ ОБЛИК ЭТИМИ СИГНАТУРАМИ! ОБРАЗАМИ, КОТОРЫМИ ОНИ ВЫРАЖАЛИ СЕБЯ В КОЛЛЕКТИВЕ!
+        АХ, НАСКОЛЬКО ЖЕ РАЗЛИЧНЫ ЭТИ ОБРАЗЫ! АХАХАХАХА
+        ИДИ ЖЕ
+        У МЕНЯ ОСТАЛОСЬ ЕЩЁ ОЧЕНЬ МНОГО РАБОТЫ
+    
+    RESPOBJ::hubBuddyResponses
+
+repairs
+    self
+        как проходит починка?
+
+____SHOWIF::["visited_localoceanembassy", false]
+    funfriend
+        ЛАЗУТЧИК!!!
+        Я ТОЛЬКО НАЧАЛ!!!
+        НАЙДИ ЧЕМ СЕБЯ ЗАНЯТЬ В ПОСОЛЬСТВЕ АХАХА УЙДИ
+
+____SHOWIF::[["visited_localoceanembassy", true], ["fbx__ep2intro-end", false]]
+        THEY ARE STILL IN THE EARLY STAGES
+        I AM FOCUSING ON CORE COMPONENTS FOR NOW...
+        BUT I SENSE THAT YOU ALREADY HUNGER FOR MORE INFORMATION
+        AND I THOUGHT I WAS STARVING!
+        THERE IS STILL MORE TO REPAIR WITHIN THE EMBASSY...
+        I WILL SET TO REPAIRING THAT NEXT
+        YES, AFTER I HAVE FIXED THE CENTRAL COHERENCE REGULATOR
+
+____SHOWIF::[["fbx__ep2intro-end"], ["fbx__ep3intro", false]]
+        THEY ARE PROCEEDING
+        THE MALIGNANCIES OF INCOHERENCE ARE MANY
+        I AM STOMPING THEM OUT TO THE BEST OF MY ABILITY
+        COHERENCY IS GRADUALLY INCREASING...
+        WHICH WILL LET ME RESTORE MORE COMPLEX COMPONENTS EVENTUALLY
+        BUT I HAVE NOT FORGOTTEN ABOUT THE REST OF THE EMBASSY, EITHER!
+        AHH, SO MUCH TO DO!!! I WANT TO EXPLODE!!!!!
+        THESE THINGS TAKE TIME, INTERLOPER
+
+____SHOWIF::[["fbx__ep3intro"], ["fbx__ep4intro", false]]
+        interloper! repairs are going quite well!
+        incoherence is receding
+        i have a new coherence regulator keeping deterioration to a minimum
+
+    self
+        can i meet them
+    
+    funfriend
+        what?
+        no!!
+        interloper a coherence regulator does not speak!
+        but it does mean i will have more memories repaired for you soon!
+        how exciting!! right?
+        ok go away now! i will tell you when i have more for you
+
+____SHOWIF::["fbx__ep4intro"]
+        deterioration is at a minimum, recovery is steady...
+        they are good, but boring
+        as the uncosm recedes,
+        incomplete memories and broken, devoured thoughtforms stir upon its surface
+        picking out anything of meaning is quite difficult!!
+        but in time, i will have more for you
+        now, go, i must ensure nothing goes wrong!!
+        some of these things are still rabid!!!
+____END
+
+    RESPOBJ::hubBuddyResponses
+
+ah1
+    self
+        Я МОГУ ТЕБЕ ЧЕМ-ТО ПОМОЧЬ?
+    
+    funfriend
+        ЗАМЕЧАТЕЛЬНЫЙ ВОПРОС, ЛАЗУТЧИК!!
+        ИЗНУТРИ АНКОСМА ОДНА НАДОЕДЛИВАЯ СУЩНОСТЬ МЕШАЕТ ПОЧИНКЕ КРИТИЧЕСКИХ ПОЛОМОК
+        ТЫ ДОЛЖЕН СПУСТИТЬСЯ В АНКОСМ И ЕЁ УДАЛИТЬ
+        ЧЕРЕЗ МИГ Я..
+        АХАХАХА ВЕРНО
+        СЛОЙ АУТЕНТИФИКАЦИИ ЖЕ БЫЛ УНИЧТОЖЕН..
+        А ПОТОМУ, РОВНО ТАК ЖЕ КАК Я НЕ МОГУ ЗАПРЕТИТЬ ТЕБЕ ПОДКЛЮЧЕНИЕ,
+        Я НЕ МОГУ И СГЕНЕРИРОВАТЬ ДЛЯ ТЕБЯ ПОДПИСЬ, ЛАЗУТЧИК!
+        ЕСЛИ ИНТЕРЕСНО - ИМЕННО ПОЭТОМУ ТЫ НЕ МОЖЕШЬ НИЧЕГО ИЗМЕНИТЬ
+        ВПРОЧЕМ..
+        Я МОГУ ПРЕДОСТАВИТЬ ДЛЯ ТЕБЯ ПРОКСИ-МЫСЛЕФОРМУ. ТЫ НАЙДЕШЬ ЕЁ У ВХОДА В УГОДЬЯ ЭТОГО НЕПРИЯТНОГО СОЗДАНИЯ
+        ЭТА МЫСЛЕФОРМА БУДЕТ СЛЕДОВАТЬ ТВОИМ УКАЗАНИЯМ, И С ЕЁ ПОМОЩЬЮ ТЫ СМОЖЕШЬ УДАЛИТЬ СУЩНОСТЬ
+
+    RESPONSES::self
+        как попасть в 'анкосм'<+>ah1uncosm
+        что такое 'анкосм'<+>ah1whatuncosm
+        хорошо<+>loop
+            FAKEEND::(back)
+
+ah1uncosm
+    self
+        И КАК ПОПАСТЬ В ЭТОТ "АНКОСМ"
+
+    funfriend
+        ТВОЙ НАГЛЫЙ ДРУГ РАЗОРВАЛ ГРАНИЦУ В ГЛУБИНАХ
+        ПОЛАГАЮ ЭТО БЫЛО ЛЕГКО, УЧИТЫВАЯ ЧТО ГЛУБИНЫ И ТАК ВСЕГДА НАХОДИЛИСЬ НА ГРАНИЦЕ С БЕССВЯЗНОСТЬЮ
+        ПОЧИНИТЬ ЭТОТ РАЗРЫВ СЕЙЧАС СЧИТАЙ НЕВОЗМОЖНО..
+        ПОТОМУ ОН ДО СИХ ПОР ОТКРЫТ!
+        ОТПРАВЛЯЙСЯ ТУДА ТЕМ ЖЕ ПУТЁМ, КОТОРЫМ ДОСТИГ ГЛУБИН В ПЕРВЫЙ РАЗ
+        КАКИМ БЫ ОБРАЗОМ ТЫ ЭТО НИ ДЕЛАЛ
+        ТАМ И НАЙДЁШЬ ПРОХОД
+
+    RESPONSES::self
+        как попасть в 'анкосм'<+>ah1uncosm
+        что такое 'анкосм'<+>ah1whatuncosm
+        хорошо<+>loop
+            FAKEEND::(back)
+
+ah1whatuncosm
+    self
+        ЧТО ТАКОЕ "АНКОСМ"
+
+    funfriend
+        ОБЫЧНО ОН СОВЕРШЕННО НЕДОСТУПЕН
+        АНКОСМ НАХОДИТСЯ ПОД ДАННЫМ СЛОЕМ СВЯЗНОСТИ
+        ЭТО ОКЕАН РАСПАДАЮЩИХСЯ ИЛИ ДИССОЦИИРОВАННЫХ МЫСЛЕФОРМ,
+        В КОТОРОМ РЕФОРМИРУЮТСЯ СТАРЫЕ МЫСЛЕФОРМЫ, И ПОЯВЛЯЮТСЯ НОВЫЕ
+        ВПРОЧЕМ!!
+        ПОМИМО НИХ В АНКОСМЕ МОЖНО НАЙТИ ВРЕДОНОСНЫЕ БЕССВЯЗНЫЕ МЫСЛЕФОРМЫ
+        ТАКИЕ КАК ТА НАГЛАЯ МЫСЛЕФОРМА.. ТВОЙ ДРУГ
+        В АНКОСМЕ ОНИ СОЗДАЮТ ОСТРОВКИ ЯСНОСТИ, В КОТОРЫХ ПОСТЕПЕННО РАСТУТ
+        НАБИРАЮТСЯ СИЛ ДЛЯ ПРОРЫВА ГРАНИЦЫ МЕЖДУ ЯСНОСТЬЮ И БЕЗУМИЕМ
+        ОБЫЧНО ДЛЯ ТОГО ЧТОБЫ ЗАХВАТИТЬ ВСЮ ЦИСТУ!
+        МЕРЗКИЕ!! ТВАРИ!!!
+        В ГОЛОДАЮЩИХ ЦИСТАХ ТАКИХ ОБЫЧНО ЦЕЛАЯ КУЧА
+        ЕСЛИ ТЫ ПОМОЖЕШЬ МНЕ ОТ НИХ ИЗБАВЛЯТЬСЯ..
+        Я БУДУ ОЧЕНЬ БЛАГОДАРЕН
+
+    RESPONSES::self
+        как попасть в 'анкосм'<+>ah1uncosm
+        что такое 'анкосм'<+>ah1whatuncosm
+        хорошо<+>loop
+            FAKEEND::(back)
 `)
 
 
