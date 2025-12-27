@@ -7,20 +7,19 @@
     it houses everything that is not dedicated to a particular page. also almost all definitions! fun! we need those to be availiable At All Times due to entmenu stuff
 */
 
-
 env.localization['definitions'] = {
     // castes 
-    "жат": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жата": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жату": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жатом": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жате": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джут": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джута": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джуту": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джутом": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джуте": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
 
-    "жаты": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жатов": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жатам": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жатами": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
-    "жатах": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джуты": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джутов": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джутам": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джутами": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
+    "джутах": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'инженер';'каста'" },
 
                     
     "вел": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'каста';'частичная потеря значения из-за поврежденного контекста'" },
@@ -116,7 +115,6 @@ env.localization['definitions'] = {
     "големами": { "type": "ПРИМЕЧАНИЕ", "text": "'частичный перевод';'подразумевается ближайший культурный эквивалент'"},
     "големах": { "type": "ПРИМЕЧАНИЕ", "text": "'частичный перевод';'подразумевается ближайший культурный эквивалент'"},
 
-
     "глазика": { "type": "ПЕРЕВОД НЕ УДАЛСЯ", "text": "ПРИЧИНА:'нет эквивалентного внутреннего значения';'нет уместного унаследованного контекста'::УСПЕШНАЯ КИРИЛЛИЗАЦИЯ" },
     "глазики": { "type": "ПЕРЕВОД НЕ УДАЛСЯ", "text": "ПРИЧИНА:'нет эквивалентного внутреннего значения';'нет уместного унаследованного контекста'::УСПЕШНАЯ КИРИЛЛИЗАЦИЯ" },
     "глазике": { "type": "ПЕРЕВОД НЕ УДАЛСЯ", "text": "ПРИЧИНА:'нет эквивалентного внутреннего значения';'нет уместного унаследованного контекста'::УСПЕШНАЯ КИРИЛЛИЗАЦИЯ" },
@@ -128,6 +126,9 @@ env.localization['definitions'] = {
     "глазиками": { "type": "ПЕРЕВОД НЕ УДАЛСЯ", "text": "ПРИЧИНА:'нет эквивалентного внутреннего значения';'нет уместного унаследованного контекста'::УСПЕШНАЯ КИРИЛЛИЗАЦИЯ" },
     "глазиках": { "type": "ПЕРЕВОД НЕ УДАЛСЯ", "text": "ПРИЧИНА:'нет эквивалентного внутреннего значения';'нет уместного унаследованного контекста'::УСПЕШНАЯ КИРИЛЛИЗАЦИЯ" },
 
+    // misc
+    "джокзи озо": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'дом';'крепость на джокзи'"},
+    "в паразита": { "type": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ", "text": "'простая стратегическая игра про кражи';'любимая игра в олтазни'"},
 
     // terminology
 
@@ -222,12 +223,15 @@ env.localization['definitions'] = {
 getLocalizationForPage(true); // --- evil
 env.localization['strings'] = {  
     "akizet": "акизет",
+    "INHERITED CONTEXT": "УНАСЛЕДОВАННЫЙ КОНТЕКСТ",
+    "NOTE": "ПРИМЕЧАНИЕ",
+    "HELLO INTERLOPER": "ПРИВЕТ ЛАЗУТЧИК",
 
     // mothspeak
     "what's up buddy?": "чё как, дружище?",
     "anything else?": "что-нибудь ещё?",
     "what's up?": "чё как?",
-    "anything else on your mind?": "что-нибудь ещё на уме?",
+    "anything else on your mind?": "ещё вопросы?",
 
     "it looks like you found an incoherence loop... seen this one before. not gonna get anything useful out of this area": "кажись ты сейчас в петле бессвязности... знаю я такое. здесь вряд ли окажется что-то полезное",
 
@@ -418,6 +422,14 @@ env.localization['strings'] = {
     "the_depths": "ГЛУБИНЫ",
     "the depths": "ГЛУБИНЫ",
 
+    "the-embassy": "посольство",
+    "THE_EMBASSY": "ПОСОЛЬСТВО",
+
+    "my beautiful world": "мой замечательный мир",
+    "my-beautiful-world": "мой-замечательный-мир",
+
+    "..__CACHE__..": "..__КЭШ__..",
+
     "UNPROCESSABLE__!!": "ОБРАБОТКА_НЕВОЗМОЖНА__!!",
     "error-unprocessable": "ошибка-обработка-невозможна",
 
@@ -455,7 +467,7 @@ env.localization['strings'] = {
     "'overcoherency fluctuation'": "'колебание сверхсвязности'",
     "'coherent'": "'связное'",
     "'incoherence fluctuation'": "'колебание бессвязности'",
-    "'widespread incoherency, exercise caution'": "'распространённая бессвязность, соблюдайте осторожность'",
+    "'widespread incoherency, exercise caution'": "'повсеместная бессвязность, соблюдайте осторожность'",
 
     "return": "назад",
     "mindspike data management": "управление данными мыслекола",
@@ -580,6 +592,31 @@ env.localization['strings'] = {
     "well your spike reported activity in the dull vessel thoughtform, why not check that out? our friend seems to have changed something there":
     "ну, твой мыслекол сообщил о какой-то деятельности в мыслеформе судна серости, почему бы не разведать там обстановку? наша таинственная улыбка похоже что-то поменяла",
 
+    // EP1
+    "still gotta feed the cyst, up to you when you want to go ahead with it but i'd do it now":
+    "ну, нам всё ещё надо накормить цисту. Когда это делать решать конечно тебе, но я бы поторопился",
+
+    "let's check in with funfriend, see what it thinks of the job we did":
+    "давай с развледругом поболтаем, посмотрим что он скажет насчет кормёжки цисты",
+
+    "head to the embassy, funfriend said it fixed some of it up for us":
+    "топай в посольство, очевидно. раз развледруг там что-то починил - надо на это поглядеть",
+
+    "there's still more to see at the embassy from what i can see on my end":
+    "судя по выводу, в посольстве ты нашёл не всё",
+
+    "i'm reading that there's been some increase in data to the city street area... definitely check that out":
+    "в воспоминаниях о городе вижу какую-то активность.. можешь сходить и проверить",
+
+    "definitely talk to funfriend about repairing communications, even if velzie wasn't threatening us it'd still be my first choice":
+    "тебе однозначно надо спросить развледруга насчёт починки коммуникаций. даже если бы нас к этому не склонял велзи, я бы постарался востановить связь как можно скорее",
+
+    "seems like we just have to wait for more repairs from funfriend. take a break i guess":
+    "судя по всему, пока ничего. ждём пока развледруг починит что-то новое. можем на перекур пойти",
+
+    "if you're talking about this thoughtform, try interacting with akizet--you'll need to be zoomed out":
+    "если ты спрашиваешь насчёт этой мыслеформы - попробуй поговорить с акизет--не забудь правда сменить перспективу"
+
 }
 env.localization['entityDescriptions'] = { // --- not referring to entity-menu.js because everystuff.js is loaded first and therefore would not be able to grab stuff outta there cause it doesnt Exist ! yet
     "gate::their city": `::СОЕДИНИТЕЛЬНАЯ МЫСЛЕФОРМА
@@ -607,7 +644,6 @@ env.localization['entityDescriptions'] = { // --- not referring to entity-menu.j
 }
 
 // === DIALOGUES === //
-
 
 // == MOTH == //
 
@@ -1081,7 +1117,7 @@ start
 
 proceed
     sys
-        ЗАПРОС_ПОЛЬЗОВАТЕЛЮ::'выбор лога'
+        ЗАПРОС_К_ПОЛЬЗОВАТЕЛЮ::'выбор лога'
 
     RESPONSES::sys
         эпизод 0<+>END
@@ -1109,7 +1145,7 @@ env.localization.dialogues["menu_hub"] = {
         body: [
             {
                 actor: "sys",
-                text: "ЗАПРОС ПОЛЬЗОВАТЕЛЮ::'намерение'"
+                text: "ЗАПРОС К ПОЛЬЗОВАТЕЛЮ::'намерение'"
             },
         ],
 
@@ -1301,6 +1337,16 @@ entity
         хорошо<+>END
 
 END::flash(true);setTimeout(()=>{content.classList.remove('ep0-epi');change('ep0_epilogue', 'started');flash(false)}, 1000)
+`)
+
+env.localization.dialogues["dead"] /*from interview1*/ = generateDialogueObject(`
+start
+    sys
+        ОШИБКА::'нет связных данных';'визуализация невозможна'
+
+    RESPONSES::self
+        завершить вспоминание<+>END
+            EXEC::moveTo('/local/ocean/ship/')
 `)
 
 

@@ -16,8 +16,8 @@ env.localization.page['localocean'] = {dialogues: {},
 
         "the embassy": cor_ru.entity_menu["the embassy"].name,
 
-        "dive": "нырнуть",
-        "rise": "вынырнуть",
+        "dive": "погрузиться",
+        "rise": "всплыть",
     }, 
     entityDescriptions: {
         'our dull vessel': cor_ru.entity_menu["our dull vessel"].desc,

@@ -621,15 +621,5 @@ behonest
 
 // == POST-VELZIE == //
 
-env.localization.page["interview1"].dialogues["dead"] = generateDialogueObject(`
-start
-    sys
-        ОШИБКА::'нет связных данных';'визуализация невозможна'
-
-    RESPONSES::self
-        завершить вспоминание<+>END
-            EXEC::moveTo('/local/ocean/ship/')
-`)
-
 
 getLocalizationForPage(true) // --- ensuring that Nothing Gets Fucked Up

@@ -18,6 +18,8 @@ env.localization.page['dullvessel'] = {dialogues: {},
         "container": cor_ru.entity_menu["container"].name,
 
         /*moth*/ "that \"container\" looks familiar": "этот \"контейнер\" выглядит знакомо",
+        "woah... look at this, dude. this is a different thoughtspace, somehow": "ух.. посмотри-ка, да это же совсем другое мыслепространство!",
+        "looks like funfriend's restored a little bit here, there's definitely more data than before": "развледруг тут похоже много чего восстановил - данных стало гораздо больше"
     },
 
     entityDescriptions: {

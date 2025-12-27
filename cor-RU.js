@@ -503,14 +503,6 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
         },
     },
 
-    // this is mildly annoying
-
-    embassyCoherent: function () {
-        if (env.localization.page['localocean']) env.localization.page['localocean'].entityDescriptions['the embassy'] = `::ПРОСТРАНСТВЕННАЯ МЫСЛЕФОРМА
-::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>'выступление';'велзи гогочет от восторга'</span>`
-        cor_ru.entity_menu['the embassy']['desc'] = `::ПРОСТРАНСТВЕННАЯ МЫСЛЕФОРМА<br>
-::УНАСЛЕДОВАННЫЙ КОНТЕКСТ::<span style='color: var(--obesk-color)'>"'выступление';'${processDefinitionsInString("велзи")} гогочет от восторга"')}</span>`},
-
     // tehehe we are devs now
 
     devElement: `<div class="devs ulbox tdone cor-ru">
@@ -519,6 +511,8 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
         <li class="tdone"><span class="tdone" definition="@dutokrisa в discord!" class="tdone">ООО "РОСРАЗУМ"</span></li>
         <li class="tdone"><span class="tdone" definition="таинственный человек о котором вы не узнаете">НАО "Млечный Путь"</span></li>
         <li class="tdone"><span class="tdone" definition="@bra1nslug_ в discord, @bruhslug в telegram!" class="tdone">Фонд "Моллюск"</span></li>
+        <h4 class="tdone">НЕОФИЦИАЛЬНЫЕ ПРАВКИ НЕОФИЦИАЛЬНОГО ПЕРЕВОДА, АВТОР ДАННОГО ФОРКА</h4>
+        <li class="tdone"><span class="tdone" definition="@darkthunderer в discord!" class="tdone">ИП Колдунов Август Дмитриевич</span></li>
     </ul>
 </div>`,
 
@@ -547,9 +541,14 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
             interview1:         "http://localhost:8000/localization/the-funny-little-room.js",
 
             localdepths:        "http://localhost:8000/localization/the-depths.js",
-            localuncosm:        "http://localhost:8000/localization/memory-hole.js",
-            localuncosmwhere:   "http://localhost:8000/localization/uncosm.js",
-            recosm:             "http://localhost:8000/localization/recosm.js"
+            localuncosm:        "http://localhost:8000/localization/uncosm.js",
+            localuncosmwhere:   "http://localhost:8000/localization/memory-hole.js",
+            recosm:             "http://localhost:8000/localization/recosm.js",
+            cache:              "http://localhost:8000/localization/cache.js",
+            localship2:         "http://localhost:8000/localization/clemens-romanus.js",
+
+            embassy:            "http://localhost:8000/localization/embassy/embassy.js",
+            discovery:          "http://localhost:8000/localization/embassy/discovery.js"
         },
         entityMenu: "http://localhost:8000/localization/entity-menu.js",
         load:       "http://localhost:8000/load.js",
@@ -561,8 +560,13 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
         if (fresh == true) {
             listArray.push(cor_ru.list.everything);
             listArray.push(cor_ru.list.entityMenu);
-            if (Object.hasOwn(cor_ru.list.page, page.dialoguePrefix)) listArray.push(cor_ru.list.page[page.dialoguePrefix])
-                else if (page.dialoguePrefix != "notfound") console.warn("the page with dialoguePrefix " + page.dialoguePrefix + " does not have a localization! this might be a bug, but might also be intentional or plain expected if you are using other mods - @cor-RU");
+            if (Object.hasOwn(cor_ru.list.page, page.dialoguePrefix)) {
+                listArray.push(cor_ru.list.page[page.dialoguePrefix])
+                if (page.dialoguePrefix == "embassy") {
+                    listArray.push(cor_ru.list.page.discovery)
+                }
+            }
+            else if (page.dialoguePrefix != "notfound") console.warn("the page with dialoguePrefix " + page.dialoguePrefix + " does not have a localization! this might be a bug, but might also be intentional or plain expected if you are using other mods - @cor-RU");
             listArray.push(cor_ru.list.load);
         }
         else {

@@ -15,6 +15,10 @@ env.localization.page['hello'] = {dialogues: {},
         "FOR_YOU": "ДЛЯ_ТЕБЯ",
         "sentry": "КАРАУЛ",
         "'thoughtform activity detected'::'advise re-examination'": "'обнаружена мыслеформенная активность'::'рекомендуется повторное сканирование'",
+
+        // EP1
+        "seems like overkill for an empty space if you ask me": "столько ресурсов для одного пустого пространства..",
+        "wow, this place is just infested... it's so incoherent i'm not even picking up any entities": "ух-ты, да тут просто ужас творится. всё настолько бессвязно, что я ни одной сущности не могу заметить."
     },
     entityDescriptions: {
         "???": `::НЕПОЛНОЦЕННАЯ МЫСЛЕФОРМА
@@ -217,6 +221,52 @@ posthello
         похоже на то<+>END
 
 END::cutscene(false); MUI("deprohibit");content.classList.remove('looking', 'atyou');cor_ru.processSpecificTranslation(document.querySelectorAll("#content .target"), "entaltname");`)
+
+// EP1 LETS GOOO
+
+env.localization.page["hello"].dialogues["authfix"] = generateDialogueObject(` 
+start
+    self
+        привет развледруг
+    
+    proxyfriend
+        лазутчик!
+            SHOWIF::[["hello__authfix-end", false]]
+        как ты сюда попал?
+            SHOWIF::[["hello__authfix-end", false]]
+        а.. ахахаха!!!
+            SHOWIF::[["hello__authfix-end", false]]
+        ясно!
+            SHOWIF::[["hello__authfix-end", false]]
+        это пространство ведь действительно недалеко..
+            SHOWIF::[["hello__authfix-end", false]]
+        
+        и снова привет, лазутчик!
+            SHOWIF::[["hello__authfix-end"]]
+    
+    RESPONSES::self
+        чем занят?<+>what
+        пока<+>END
+
+what
+    self
+        что это ты тут делаешь?
+    
+    proxyfriend
+        стерегу это пространство с помощью прокси!
+        пространство, видишь ли, ничем не заполнено с твоего первого подключения...
+        а мыслепространства пусты не бывают - в пустых мыслепространствах часто возникают ошибки, селятся беглецы из анкосма
+        если не следить за ним - будет очень плохо!!
+        центральный регулятор связности я восстановил, конечно, с твоей помощью...
+        но! стоит ли расслабляться, после всего, что эта циста пережила?
+        я должен следить чтобы ничего не сломалось - даже если поломки маловероятны!
+        остались ещё те, кто пытается выползти на поверхность...
+        я чувствую их присутствие прямо сейчас - если ослабить хватку, то они ускользнут
+        можешь не волноваться, лазутчик!! я уж позабочусь чтобы всё работало! ахахаха
+    
+    RESPONSES::self
+        хорошо<+>END
+`)
 
 
 getLocalizationForPage(true) // --- ensuring that Nothing Gets Fucked Up
