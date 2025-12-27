@@ -521,37 +521,38 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
     },
 
     // loading and updating stuff as we go
+    
 
     list: {
-        everything: "http://localhost:8000/localization/everystuff.js",
+        everything: "https://darkthunderer.github.io/cor-RU/localization/everystuff.js",
         page: {
-            fbx:                "http://localhost:8000/localization/basement.js",
+            fbx:                "https://darkthunderer.github.io/cor-RU/localization/basement.js",
 
-            hello:              "http://localhost:8000/localization/auth-layer.js",
-            hub:                "http://localhost:8000/localization/hub.js",
+            hello:              "https://darkthunderer.github.io/cor-RU/localization/auth-layer.js",
+            hub:                "https://darkthunderer.github.io/cor-RU/localization/hub.js",
 
-            localcity:          "http://localhost:8000/localization/their-city.js",
-            citystreet:         "http://localhost:8000/localization/city-surface.js",
+            localcity:          "https://darkthunderer.github.io/cor-RU/localization/their-city.js",
+            citystreet:         "https://darkthunderer.github.io/cor-RU/localization/city-surface.js",
 
-            localorbit:         "http://localhost:8000/localization/the-void.js",
-            dullvessel:         "http://localhost:8000/localization/our-dull-vessel.js",
+            localorbit:         "https://darkthunderer.github.io/cor-RU/localization/the-void.js",
+            dullvessel:         "https://darkthunderer.github.io/cor-RU/localization/our-dull-vessel.js",
 
-            localocean:         "http://localhost:8000/localization/their-waters.js",
-            localship:          "http://localhost:8000/localization/their-vessel.js",
-            interview1:         "http://localhost:8000/localization/the-funny-little-room.js",
+            localocean:         "https://darkthunderer.github.io/cor-RU/localization/their-waters.js",
+            localship:          "https://darkthunderer.github.io/cor-RU/localization/their-vessel.js",
+            interview1:         "https://darkthunderer.github.io/cor-RU/localization/the-funny-little-room.js",
 
-            localdepths:        "http://localhost:8000/localization/the-depths.js",
-            localuncosm:        "http://localhost:8000/localization/uncosm.js",
-            localuncosmwhere:   "http://localhost:8000/localization/memory-hole.js",
-            recosm:             "http://localhost:8000/localization/recosm.js",
-            cache:              "http://localhost:8000/localization/cache.js",
-            localship2:         "http://localhost:8000/localization/clemens-romanus.js",
+            localdepths:        "https://darkthunderer.github.io/cor-RU/localization/the-depths.js",
+            localuncosm:        "https://darkthunderer.github.io/cor-RU/localization/uncosm.js",
+            localuncosmwhere:   "https://darkthunderer.github.io/cor-RU/localization/memory-hole.js",
+            recosm:             "https://darkthunderer.github.io/cor-RU/localization/recosm.js",
+            cache:              "https://darkthunderer.github.io/cor-RU/localization/cache.js",
+            localship2:         "https://darkthunderer.github.io/cor-RU/localization/clemens-romanus.js",
 
-            embassy:            "http://localhost:8000/localization/embassy/embassy.js",
-            discovery:          "http://localhost:8000/localization/embassy/discovery.js"
+            embassy:            "https://darkthunderer.github.io/cor-RU/localization/embassy/embassy.js",
+            discovery:          "https://darkthunderer.github.io/cor-RU/localization/embassy/discovery.js"
         },
-        entityMenu: "http://localhost:8000/localization/entity-menu.js",
-        load:       "http://localhost:8000/load.js",
+        entityMenu: "https://darkthunderer.github.io/cor-RU/localization/entity-menu.js",
+        load:       "https://darkthunderer.github.io/cor-RU/load.js",
     },
 
     updateResources: function (fresh = false) {
