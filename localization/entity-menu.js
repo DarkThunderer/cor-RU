@@ -365,6 +365,8 @@ cor_ru.entity_menu = {
         desc: `::ОТЗЫВЧИВАЯ МЫСЛЕФОРМА<br>::ЯВНОЕ НАЗНАЧЕНИЕ::'вспоминание'<br><span style='color: var(--friend-color)'>::ВОССТАНОВЛЕННЫЙ КОНТЕКСТ ПОДПИСИ</span><br><span style='color: var(--friend-color)'>+</span>'влияние <span definition="УНАСЛЕДОВАННЫЙ КОНТЕКСТ::'подразумевается этнос';'происходит от названия континента';'экива'">экивикских</span> геометров'<br><span style='color: var(--friend-color)'>+</span>'рецепторы ${processDefinitionsInString("θвела")}, свёрнуты, угловато стилизованы'<br><span style='color: var(--friend-color)'>+</span>'<span definition="УНАСЛЕДОВАННЫЙ КОНТЕКСТ::'моя настоящая накидка тоже переливается цветами - я покрыла её смесью разных грибов'">лично спроектированная подпись</span>'`
     }
 
+    // === embassy enemies (Но я предпочитаю звать их::'завтрак';'обед';'ужин')
+
     // === embassy honorable mentions
     /*"": {
         name: ``,

@@ -67,8 +67,8 @@ if (window.location.pathname == '/credits') {
     document.querySelector(".fundfriends").insertAdjacentHTML("afterbegin", fund)
     throw new Error("hi dont mind me cor-RU is not supposed to load properly in credits")
 }
-else if ((page.path == '/' && !check('TEMP!!sat') && check('ep1_end') && !check('ep2_showmaterials')) || env.ep2 == true) {
-    chatter({actor: 'actual_site_error', text: "hi! cor-RU is availiable only for ep0-1<br>приветик! cor-RU доступен только для ep0-1", readout: true})
+else if ((page.path == '/' && !check('TEMP!!sat') && check('fbx__ep3intro')) || env.ep3 == true) {
+    chatter({actor: 'actual_site_error', text: "hi! cor-RU is availiable only for ep0-2<br>приветик! cor-RU доступен только для ep0-1", readout: true})
     throw new Error("hi! сor-RU is availiable only for ep0-1")
 }
 
@@ -84,8 +84,8 @@ cor_ru = {
     css: `
 @font-face {
     font-family: 'spacemono';
-    src: url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/modfont.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/modfont.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/modfont.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/modfont.woff') format('woff');
     font-weight: normal; 
     font-style: normal;
     font-display: swap;
@@ -93,8 +93,8 @@ cor_ru = {
 
 @font-face {
     font-family: 'barcode';
-    src: url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/barc.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/barc.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/barc.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/barc.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -102,8 +102,8 @@ cor_ru = {
 
 @font-face {
     font-family: 'barcodetext';
-    src: url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/barcode.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/barcode.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/barcode.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/barcode.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -111,7 +111,7 @@ cor_ru = {
 
 @font-face {
     font-family: 'beech';
-    src: url('https://raw.githubusercontent.com/cor-ru/cor-RU/main/fonts/beechy.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/DarkThunderer/cor-RU/main/fonts/beechy.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -524,36 +524,40 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
     
 
     list: {
-        everything: "https://darkthunderer.github.io/cor-RU/localization/everystuff.js",
+        everything: "http://localhost:8000/localization/everystuff.js",
         page: {
-            fbx:                "https://darkthunderer.github.io/cor-RU/localization/basement.js",
+            fbx:                "http://localhost:8000/localization/basement.js",
 
-            hello:              "https://darkthunderer.github.io/cor-RU/localization/auth-layer.js",
-            hub:                "https://darkthunderer.github.io/cor-RU/localization/hub.js",
+            hello:              "http://localhost:8000/localization/auth-layer.js",
+            hub:                "http://localhost:8000/localization/hub.js",
 
-            localcity:          "https://darkthunderer.github.io/cor-RU/localization/their-city.js",
-            citystreet:         "https://darkthunderer.github.io/cor-RU/localization/city-surface.js",
+            localcity:          "http://localhost:8000/localization/their-city.js",
+            citystreet:         "http://localhost:8000/localization/city-surface.js",
 
-            localorbit:         "https://darkthunderer.github.io/cor-RU/localization/the-void.js",
-            dullvessel:         "https://darkthunderer.github.io/cor-RU/localization/our-dull-vessel.js",
+            localorbit:         "http://localhost:8000/localization/the-void.js",
+            dullvessel:         "http://localhost:8000/localization/our-dull-vessel.js",
 
-            localocean:         "https://darkthunderer.github.io/cor-RU/localization/their-waters.js",
-            localship:          "https://darkthunderer.github.io/cor-RU/localization/their-vessel.js",
-            interview1:         "https://darkthunderer.github.io/cor-RU/localization/the-funny-little-room.js",
+            localocean:         "http://localhost:8000/localization/their-waters.js",
+            localship:          "http://localhost:8000/localization/their-vessel.js",
+            interview1:         "http://localhost:8000/localization/the-funny-little-room.js",
 
-            localdepths:        "https://darkthunderer.github.io/cor-RU/localization/the-depths.js",
-            localuncosm:        "https://darkthunderer.github.io/cor-RU/localization/uncosm.js",
-            localuncosmwhere:   "https://darkthunderer.github.io/cor-RU/localization/memory-hole.js",
-            recosm:             "https://darkthunderer.github.io/cor-RU/localization/recosm.js",
-            cache:              "https://darkthunderer.github.io/cor-RU/localization/cache.js",
-            localship2:         "https://darkthunderer.github.io/cor-RU/localization/clemens-romanus.js",
+            localdepths:        "http://localhost:8000/localization/the-depths.js",
+            localuncosm:        "http://localhost:8000/localization/uncosm.js",
+            recosm:             "http://localhost:8000/localization/recosm.js",
+            cache:              "http://localhost:8000/localization/cache.js",
+            localship2:         "http://localhost:8000/localization/clemens-romanus.js",
 
-            embassy:            "https://darkthunderer.github.io/cor-RU/localization/embassy/embassy.js",
-            discovery:          "https://darkthunderer.github.io/cor-RU/localization/embassy/discovery.js",
-            suspicion:          "https://darkthunderer.github.io/cor-RU/localization/embassy/suspicion.js",
+            localuncosmwhere:   "http://localhost:8000/localization/memory-hole/memory-hole.js",
+            sec:                "http://localhost:8000/localization/memory-hole/memories.js",
+            sry:                "http://localhost:8000/localization/memory-hole/sorry.js",
+
+            embassy:            "http://localhost:8000/localization/embassy/embassy.js",
+            discovery:          "http://localhost:8000/localization/embassy/discovery.js",
+            suspicion:          "http://localhost:8000/localization/embassy/suspicion.js",
+            collapse:           "http://localhost:8000/localization/embassy/collapse.js"
         },
-        entityMenu: "https://darkthunderer.github.io/cor-RU/localization/entity-menu.js",
-        load:       "https://darkthunderer.github.io/cor-RU/load.js",
+        entityMenu: "http://localhost:8000/localization/entity-menu.js",
+        load:       "http://localhost:8000/load.js",
     },
 
     updateResources: function (fresh = false) {
@@ -566,6 +570,11 @@ body[quality="low"] .quality::after { content: "Качество: НИЗКОЕ" 
                 if (page.dialoguePrefix == "embassy") {
                     listArray.push(cor_ru.list.page.discovery)
                     listArray.push(cor_ru.list.page.suspicion)
+                    listArray.push(cor_ru.list.page.collapse)
+                }
+                if (page.dialoguePrefix == "localuncosmwhere") {
+                    console.log("tralala")
+                    env.uncode.enter = cor_ru.codes
                 }
                 listArray.push(cor_ru.list.page[page.dialoguePrefix])
             }
@@ -603,7 +612,7 @@ cor_ru['advance'] = function () {
     }, 1000)
 }
 cor_ru['advancewarnclick'] = function () {
-    if (env.ep1 == true) {
+    if (env.ep2 == true) {
         document.body.insertAdjacentHTML('beforeend', `
             <div id="ru-warning" class="popup-warning">
                 <div class="sysblock">

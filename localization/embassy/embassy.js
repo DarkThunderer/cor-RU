@@ -9,12 +9,7 @@
 env.localization.page["embassy"].definitions = {
     ...cor_ru.embassy["discovery"].definitions,
     ...cor_ru.embassy["suspicion"].definitions,
-
-    "времяостановитель": "'частичный перевод';'сгенерировано подходящее по описанию существительное'",
-    "времяостановителя": "'частичный перевод';'сгенерировано подходящее по описанию существительное'",
-    "времяостановителю": "'частичный перевод';'сгенерировано подходящее по описанию существительное'",
-    "времяостановителем": "'частичный перевод';'сгенерировано подходящее по описанию существительное'",
-    "времяостановителе": "'частичный перевод';'сгенерировано подходящее по описанию существительное'",
+    ...cor_ru.embassy["collapse"].definitions,
 
     "структуразум": "'уважаемая роль';'административная позиция';'частичный перевод';'сгенерировано подходящее по описанию существительное'",
     "структуразума": "'уважаемая роль';'административная позиция';'частичный перевод';'сгенерировано подходящее по описанию существительное'",
@@ -26,6 +21,7 @@ env.localization.page["embassy"].definitions = {
 env.localization.page["embassy"].strings = {
     ...cor_ru.embassy["discovery"].strings,
     ...cor_ru.embassy["suspicion"].strings,
+    ...cor_ru.embassy["collapse"].strings,
 
     "this is the most dense thoughtform i think i've ever seen... they have such a strange way of storing data": "это, пожалуй, самая плотная мыслеформа, которую я когда-либо видел. ну и странный у обесков конечно способ хранения данных",
     "holy smokes. yeah i don't think we ever heard about this part of the call... hey--there's another memory that's been fixed, open it": "ну нихера себе. про такие детали о зове я ещё никогда не слышал.. о--погляди - тут новое воспоминание появилось - посмотри что внутри",
@@ -53,6 +49,7 @@ env.localization.page["embassy"].strings = {
     "THE BRIGHTNESS OF IT DISTORTS MY FEATURES AND SENDS MY RECEPTORS INTO A REFLEXIVE CURL": "ПОЖАЛУЙ ВКУС ДАЖЕ СЛИШКОМ СИЛЬНЫЙ - ЧЕРТЫ МОЕГО ЛИЦА И РЕЦЕПТОРЫ РЕФЛЕКТИВНО СЖИМАЮТСЯ",
     "STRONG!! BUT THE CITRUS INSPIRES A PLEASANT SATIATION": "КИСЛО! НО, ТЕМ НЕ МЕНЕЕ, ПРИЯТНО",
     "think to self": "подумать",
+    "It's locked": "Закрыто",
 
     "recollection::better times": cor_ru.entity_menu["recollection::better times"].name,
     "recollection::discovery": cor_ru.entity_menu["recollection::discovery"].name,
@@ -86,6 +83,7 @@ env.localization.page["embassy"].strings = {
 env.localization.page["embassy"].entityDescriptions = {
     ...cor_ru.embassy["discovery"].entityDescriptions,
     ...cor_ru.embassy["suspicion"].entityDescriptions,
+    ...cor_ru.embassy["collapse"].entityDescriptions,
 
     "recollection::better times": cor_ru.entity_menu["recollection::better times"].desc,
     "recollection::discovery": cor_ru.entity_menu["recollection::discovery"].desc,

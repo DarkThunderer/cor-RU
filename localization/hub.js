@@ -283,7 +283,7 @@ RESPOBJ::
             SHOWIF::["recosm_state"]
             SHOWONCE::
 
-        whats new?<+>ep2start
+        какие новости?<+>ep2start
             SHOWIF::[["fbx__ep2intro-end", true], ["ENV!!ep3", false]]
             SHOWONCE::
 
@@ -295,7 +295,7 @@ RESPOBJ::
             SHOWIF::[["ENV!!ep4"]]
             SHOWONCE::
 
-        i need you to make some changes<+>mothframe
+        можешь внести пару изменений?<+>mothframe
             SHOWIF::[["embassy__mothframe-end"], ["hub__funfriend-mothframe", false]]
             SHOWONCE::
 
@@ -640,14 +640,14 @@ ____SHOWIF::[["visited_localoceanembassy", true], ["fbx__ep2intro-end", false]]
         КАК ЗАКОНЧУ РАЗБИРАТЬСЯ С ЦЕНТРАЛЬНЫМ РЕГУЛЯТОРОМ СВЯЗНОСТИ, КОНЕЧНО ЖЕ
 
 ____SHOWIF::[["fbx__ep2intro-end"], ["fbx__ep3intro", false]]
-        THEY ARE PROCEEDING
-        THE MALIGNANCIES OF INCOHERENCE ARE MANY
-        I AM STOMPING THEM OUT TO THE BEST OF MY ABILITY
-        COHERENCY IS GRADUALLY INCREASING...
-        WHICH WILL LET ME RESTORE MORE COMPLEX COMPONENTS EVENTUALLY
-        BUT I HAVE NOT FORGOTTEN ABOUT THE REST OF THE EMBASSY, EITHER!
-        AHH, SO MUCH TO DO!!! I WANT TO EXPLODE!!!!!
-        THESE THINGS TAKE TIME, INTERLOPER
+        ШТАТНО
+        СБОЕВ ИЗ-ЗА БЕССВЯЗНОСТИ МНОЖЕСТВО
+        Я СТАРАЮСЬ ОТ НИХ ИЗАВЛЯТЬСЯ ТАК БЫСТРО, КАК ТОЛЬКО МОГУ
+        СВЯЗНОСТЬ ПОМАЛЕНЬКУ ВОССТАНАВЛИВАЕТСЯ...
+        ЭТО РАНО ИЛИ ПОЗДНО ДОЛЖНО МНЕ ПОМОЧЬ В ВОССТАНОВЛЕНИИ БОЛЕЕ СЛОЖНЫХ КОМПОНЕНТОВ
+        НЕ ЗАБЫЛ Я И О ПОСОЛЬСТВЕ!
+        ААА, КАК ЖЕ МНОГО МНЕ НАДО СДЕЛАТЬ!!! Я СКОРО ВЗОРВУСЬ!!!!!
+        ПОКА ПРИДЁТСЯ ПОДОЖДАТЬ, ЛАЗУТЧИК
 
 ____SHOWIF::[["fbx__ep3intro"], ["fbx__ep4intro", false]]
         interloper! repairs are going quite well!
@@ -1031,103 +1031,103 @@ commsok
 
 ep2start
     self
-        what's new, funfriend?
+        какие новости, развледруг?
     
     funfriend
-        THANKS TO YOUR ASSISTANCE WITH THAT TROUBLESOME ENTITY...
+        БЛАГОДАРЯ ТВОЕЙ ПОМОЩИ С ТОЙ НАЗОЙЛИВОЙ СУЩНОСТЬЮ...
             SHOWIF::"recosm_state"
         
-        DESPITE A CERTAIN TROUBLESOME AGENT WITHIN THE UNCOSM...
+        НЕСМОТРЯ НА ОДНУ НАДОЕДЛИВУЮ СУЩНОСТЬ В АНКОСМЕ...
             SHOWIF::[["recosm_state", false]]
 
-        A COHERENCY BASELINE IS GRADUALLY BEING ESTABLISHED
-        IT WILL BE A LONG TIME BEFORE IT IS FULLY EFFECTIVE,
-        BUT!
-        THAT WILL FREE UP MORE OF MY TIME TO RESTORE CORE COMPONENTS!
-        FOR EXAMPLE, COMMUNICATIONS!
-        BUT I KNOW YOU HAVE COME FOR MORE INFORMATION, SO:
-        I HAVE PARTIALLY REPAIRED ANOTHER PORTION OF THE EMBASSY, AS WELL!
-        YOU KNOW, 
-        THESE MEMORIES ARE AKIZETESCHE'S, BUT THEY ALSO SERVE AS MINE
-        AND SINCE IT WAS DAMAGED, I HAD NO IDEA THINGS GOT THAT BAD...
-        I AM WORKING ON RESTORING THE REST OF THE MEMORY, BUT IT WILL TAKE A WHILE LONGER
-        IT IS QUITE A LARGE ONE!!!
-        SO! GO AND SEE WHAT IS THERE SO FAR!
+        МНЕ УДАЁТСЯ ПОСТЕПЕННО ПОВЫШАТЬ ОБЩУЮ СВЯЗНОСТЬ
+        ДО ПОЛНОГО ВОССТАНОВЛЕНИЯ, КОНЕЧНО, ЕЩЁ ОЧЕНЬ МНОГО РАБОТЫ..
+        НО!
+        ВЫСОКАЯ СВЯЗНОСТЬ СНИМЕТ С МЕНЯ ЧАСТЬ НАГРУЗКИ И ПОМОЖЕТ ВОССТАНОВИТЬ КЛЮЧЕВЫЕ КОМПОНЕНТЫ ЦИСТЫ!
+        НАПРИМЕР СИСТЕМЫ СВЯЗИ!
+        НЕ ДУМАЙ ЧТО Я О ТЕБЕ ЗАБЫЛ, ЛАЗУТЧИК:
+        Я СУМЕЛ ЧАСТИЧНО ВОССТАНОВИТЬ СЛЕДУЮЩУЮ СЕКЦИЮ ПОСОЛЬСТВА!
+        ВИДИШЬ ЛИ,
+        ЭТИ ВОСПОМИНАНИЯ ПРИНАДЛЕЖАТ МНЕ В ТОЙ ЖЕ СТЕПЕНИ ЧТО И АКИЗЕТЕШЕ
+        ПАМЯТЬ ЦИСТЫ И МОЯ ПАМЯТЬ - ОДНО И ТО ЖЕ
+        ПОКА Я ЕЁ НЕ ВОССТАНОВИЛ, Я И НЕ ЗНАЛ НАСКОЛЬКО ПЛОХО ВСЁ ОБЕРНУЛОСЬ...
+        Я ОБЯЗАТЕЛЬНО ВОССТАНОВЛЮ ОСТАВШИЕСЯ ЧАСТИ ВОСПОМИНАНИЯ, НО ПОКА ТЕБЕ ПРИДЁТСЯ НЕМНОГО ПОДОЖДАТЬ
+        ЭТА СЕКЦИЯ ПОСОЛЬСТВА ДОВОЛЬНО БОЛЬШАЯ!!!
+        ИДИ ЖЕ! УЗРИ ЧТО Я СМОГ ВОССТАНОВИТЬ С ТВОЕЙ ПОМОЩЬЮ!
 
     RESPONSES::self
-        cool thanks<+>loop
+        круто, спасибо<+>loop
             FAKEEND::(back)
 
 mothframe
     self
-        i need you to make some modifications to the last embassy day
+        развледруг, можешь внести пару изменений в последний день посольства?
     
     funfriend
-        WHAT?
-        CHANGING THE MEMORY WILL NOT CHANGE WHAT ACTUALLY HAPPENED
-        YOU KNOW THAT, RIGHT?
-        SELF DELUSION IS EXTREMELY UNHEALTHY
-        AND ALSO THE FIRST SIGN OF EGO SPIRALING
-        ARE YOU FEELING OK? 
-        HAVE YOU BEEN EXPERIENCING URGES TO UNNATURALLY ALTER YOUR OWN THOUGHT PROCESSES?
+        ЧЕГО?
+        ИЗМЕНЕНИЕ ПАМЯТИ НЕ ИЗМЕНИТ ПРОИЗОШЕДШЕГО
+        ТЫ ВЕДЬ ЗНАЕШЬ ОБ ЭТОМ, ЛАЗУТЧИК?
+        САМООБМАН - ОЧЕНЬ ОПАСНАЯ ПРИВЫЧКА
+        А ТАКЖЕ ПЕРВЫЙ СИМПТОМ УХОДА ЭГО ПО СПИРАЛИ!!!
+        С ТОБОЙ ВСЁ ХОРОШО? 
+        ОЩУЩАЕШЬ ЛИ ТЫ В ПОСЛЕДНЕЕ ВРЕМЯ МНОЖЕСТВЕННЫЕ ПОЗЫВЫ ИЗМЕНИТЬ СОБСТВЕННЫЕ МЫСЛИТЕЛЬНЫЕ ПРОЦЕССЫ?
     
     RESPONSES::self
-        it's important<+>mothframe2
+        это важно<+>mothframe2
 
 mothframe2
     self
-        it's really important
-        i physically can't get in without these changes
+        это очень важно
+        я не могу взаимодействовать с воспоминанием без этих изменений
     
     funfriend
-        I SEE...
-        YES, YOUR NATURE AS AN INTERLOPER IS STILL UNKNOWN TO ME
-        I CAN TAKE A LOOK - PLEASE SEND THROUGH WHAT YOU WOULD LIKE
+        ЯСНО...
+        ДА УЖ, ВНУТРЕННИЕ МАХИНАЦИИ ТВОЕГО РАЗУМА ДЛЯ МЕНЯ ВСЁ ЕЩЁ ЗАГАДКА, ЛАЗУТЧИК...
+        ЧТО-Ж, Я ПОСМОТРЮ ЧТО МОЖНО СДЕЛАТЬ - ПЕРЕДАЙ МНЕ ПАКЕТ ТРЕБУЕМЫХ ИЗМЕНЕНИЙ
 
     moth
-        ok, i'm transferring now...
+        хорошо, сейчас всё будет..
 
     sys
-        ATTENTION::"forwarding packed thoughtform"
+        ВНИМАНИЕ::"передача сжатой мыслеформы"
 
     funfriend
         ...
-        WHAT ARE THESE THOUGHTS?
-        ARE THESE YOUR THOUGHTS?
-        IS THIS WHAT YOUR THOUGHTS ARE LIKE?
-        THIS IS HORRIBLE...
-        OK. WELL,
-        THE CHANGES YOU WANT DO NOT ACTUALLY SEEM TO ALTER THE EVENTS...
-        AND I BARELY NEED TO DO ANY WORK TO IMPLEMENT THEM! AHAHAHA
-        SO, I WILL JUST...
+        ЧТО ЭТО ЗА МЫСЛИ?
+        ОНИ ТВОИ?
+        ЗНАЧИТ ТВОИ МЫСЛИ ВЫГЛЯДЯТ ВОТ ТАК?..
+        КАКОЙ УЖАС...
+        ЧТО-Ж, ХОРОШО
+        ПРЕДЛАГАЕМЫЕ ТОБОЙ ИЗМЕНЕНИЯ НЕ ТРЕБУЮТ РЕДАКТИРОВАНИЯ СОБЫТИЙ...
+        А ДЛЯ ИХ РЕАЛИЗАЦИИ С МОЕЙ СТОРОНЫ ПОЧТИ НЕ ПОТРЕБУЕТСЯ РАБОТЫ! АХАХАХА...
+        ПОЛАГАЮ Я ДОЛЖЕН...
     
     sys
-        ATTENTION::'thoughtform activity detected'::IN::'embassy'
+        ВНИМАНИЕ::'обнаружена мыслеформенная активность'::В::'посольстве'
 
     funfriend
-        THERE!
-        FROM WHAT I SAW IN THAT DISTURBED MESS YOU GAVE ME
-        IT HAS FREED UP THOUGHTFORMS TO TAKE ACTION WITHIN A LIMITED RANGE
-        STILL NOT LUCID, BUT ABLE TO DO THINGS THEY DID NOT,
-        ALL WHILE STILL ACTING LIKE THEY WOULD HAVE
-        SO STRANGE!
-        BUT, THIS ALSO MEANS...
-        IF THERE ARE ANY INCOHERENT THOUGHTFORMS IN THERE,
-        THEY WILL NOT ALWAYS ABIDE BY THIS STRANGE STRUCTURE YOU HAVE PLACED OVER THE MEMORY
-        I DID MY BEST, BUT, 
-        THERE ARE DIMINISHING RETURNS WHEN DEALING WITH SUCH ENTITIES
-        AND I WOULD RATHER WORK ON SOMETHING ELSE! AHAHAHA
-        SO I JUST INSERTED A PROXY THOUGHTFORM
-        JUST IN CASE YOU NEED TO MANUALLY AVOID INCOHERENCE!
-        OK. OFF WITH YOU! GO VIEW YOUR STRANGE DREAM
+        ГОТОВО!
+        СУДЯ ПО ТОМУ УЖАСАЮЩЕМУ МЕСИВУ ЧТО ТЫ МНЕ ПРЕДОСТАВИЛ
+        ИЗМЕНЕНИЯ ОСВОБОДИЛИ ЧАСТЬ МЫСЛЕФОРМ И ДАЛИ ИМ ВОЗМОЖНОСТЬ СВОБОДНО ДЕЙСТВОВАТЬ В ОПРЕДЕЛЁННЫХ ПРЕДЕЛАХ
+        ОНИ НЕ ДОЛЖНЫ БЫЛИ ОБРЕСТИ САМОСОЗНАНИЯ, НО ТЕПЕРЬ МОГУТ СОВЕРШАТЬ ДЕЙСТВИЯ, РАНЕЕ ДЛЯ НИХ НЕДОСТУПНЫЕ
+        ВСЕ ЭТИ ДЕЙСТВИЯ, ВПРОЧЕМ, СЛЕДУЮТ ИСХОДНОМУ НАРРАТИВУ..
+        КАК СТРАННО!..
+        ЛАЗУТЧИК
+        ТЕБЕ СТОИТ ЗНАТЬ, ЧТО ЕСЛИ В ПОСОЛЬСТВЕ СКРЫВАЛИСЬ БЕССВЯЗНЫЕ МЫСЛЕФОРМЫ,
+        ТО ТОЙ СТРАННОЙ СТРУКТУРЕ, ПОСТАВЛЕННОЙ ПОВЕРХ ПАМЯТИ, СКОРЕЕ ВСЕГО НЕ УДАСТСЯ ИХ УДЕРЖАТЬ
+        Я СДЕЛАЛ ВСЁ ЧТО В МОИХ СИЛАХ, НО ЧЕМ БОЛЬШЕ УСИЛИЙ ТЫ ПРИЛАГАЕШЬ НА БОРЬБУ С ЭТИМИ СУЩНОСТЯМИ, ТЕМ МЕНЬШЕ ЭТИ УСИЛИЯ ПРИНОСЯТ ПОЛЬЗЫ!
+        А Я БЫ ПРЕДПОЧЁЛ ЗАНЯТЬСЯ ЧЕМ-НИБУДЬ БОЛЕЕ ОСМЫСЛЕННЫМ! АХАХАХХАХАХА
+        НА ВСЯКИЙ СЛУЧАЙ Я ОСТАВИЛ ВНУТРИ СВОЁ ПРОКСИ
+        НА СЛУЧАЙ ЕСЛИ ТЕБЕ ВРУЧНУЮ ПРИДЁТСЯ УКЛОНЯТЬСЯ ОТ БЕССВЯЗНОСТИ!
+        ЧТО-Ж, ПОКА! ИДИ И ИССЛЕДУЙ СВОЮ СТРАННУЮ ГРЁЗУ!
 
     RESPONSES::self
-        thanks<+>END
+        спасибо<+>END
         
     RESPONSES::sys
-        return to embassy<+>END
+        вернуться в посольство<+>END
             EXEC::moveTo("/local/ocean/embassy/")
-            FAKEEND::(direct navigation)
+            FAKEEND::(прямая навигация)
 
 ep3start
     self

@@ -2,7 +2,7 @@
     cor-RU - a russian localization mod for corru.observer;
     see https://github.com/cor-RU/cor-RU for more info
 
-    > localization/memory-hole/memory-hole.js
+    > localization/memory-hole.js
     localization for /local/uncosm/where
 */
 
@@ -37,49 +37,41 @@ start
 env.uncode.enter = ()=>{
     let value = env.uncode.input.value.toLowerCase().replaceAll(".", "").replaceAll("/", "")
     switch (value) {
-        // just so you can't access the labs
         case "pit":
             value = "dangerous";
             break;
-        // idk why, but have it
         case "рекосм":
             value = "recosm";
             break;
-        // unknown
+        case "зов":
+            value = "call";
+            break;
         case "кавик":
             value = "cavik";
             break;
         case "корру":
             value = "corru";
             break;
-
-        // ep0 from the city
-        case "вейльк":
-            value = "veilk";
+        case "пёс":
+            value = "dog";
             break;
-        case "вейльков":
-            value = "veilk";
-            break;
-        case "поверхность":
-            value = "surface";
-            break;
-        // their waters and veilk
-        case "шпиль":
-            value = "spire";
-            break;
-        case "шпиля":
-            value = "spire";
-            break;
-
-        // ep1 dull vessel
-        case "паразит":
-            value = "parasite";
-            break;
-        case "паразита":
-            value = "parasite";
+        case "пес":
+            value = "dog";
             break;
         case "серое":
             value = "dull";
+            break;
+        case "effigy":
+            value = "effigy";
+            break;
+        case "fairy":
+            value = "fairy";
+            break;
+        case "цветок*":
+            value = "flower";
+            break;
+        case "humor":
+            value = "humor";
             break;
         case "личиночный":
             value = "larval";
@@ -87,52 +79,36 @@ env.uncode.enter = ()=>{
         case "личинка":
             value = "larval";
             break;
-        // god
+        case "паразит":
+            value = "parasite";
+            break;
+        case "паразита":
+            value = "parasite";
+            break;
+        case "шпиль":
+            value = "spire";
+            break;
         case "прости":
             value = "sorry";
             break;
-        // suspicion
-        case "зузукри":
-            value = "zuzucri";
+        case "поверхность":
+            value = "surface";
             break;
-
-        // ep2 joy waters
-        case "зов":
-            value = "call";
+        case "вейльк":
+            value = "veilk";
             break;
-        // isabel
-        case "цветок*":
-            value = "flower";
+        case "вейльков":
+            value = "veilk";
             break;
-        case "fairy":
-            value = "fairy";
-            break;
-
-        // ep3 car
         case "walker":
             value = "walker";
             break;
-        // golem maintenance
-        case "пёс":
-            value = "dog";
-            break;
-        case "пес":
-            value = "dog";
-            break;
-        // beneath
-        case "effigy":
-            value = "effigy";
-            break;
-        // isabel meeting?
         case "yuzku":
             value = "yuzku";
             break;
-
-        // ep4 geli in ozo
-        case "humor":
-            value = "humor";
+        case "зузукри":
+            value = "zuzucri";
             break;
-        // pale halls
         case "маски*":
             value = "zuzucri-mask";
             break;
